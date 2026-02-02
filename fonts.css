@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('fonts/TT%20Wellingtons%20Trial%20Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('fonts/TT%20Wellingtons%20Trial%20Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('fonts/TT%20Wellingtons%20Trial%20Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Wellingtons';
+  src: url('fonts/TT%20Wellingtons%20Trial%20ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Abhaya Libre ExtraBold';
+  src: local('Abhaya Libre ExtraBold'),
+       local('AbhayaLibre-ExtraBold'),
+       url('./fonts/AbhayaLibre-ExtraBold-new1.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
