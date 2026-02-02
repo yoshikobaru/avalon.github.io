@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avilon</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TANK Avilon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>TANK Avilon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Abhaya+Libre:wght@400;500;600;700;800&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
@@ -31,8 +29,13 @@
       </div>
       <div class="header-center">
         <img src="images/tank-logo.svg" alt="TANK" class="tank-icon">
-        <span class="logo-tank-text"></span>
+        <span class="logo-tank-text">TANK</span>
       </div>
+      <button class="burger-menu" aria-label="Меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
       <div class="header-contacts">
         <div class="contact-item">
           <div class="icon-box"><img src="images/I1007_7849_31_238_17_52.svg" alt="Location"></div>
@@ -54,6 +57,33 @@
       <a href="#" class="nav-item">О КОМПАНИИ</a>
       <a href="#" class="nav-item">КОНТАКТЫ</a>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Меню</span>
+        <button class="mobile-menu-close" aria-label="Закрыть меню">×</button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#" class="mobile-nav-item">МОДЕЛИ</a>
+        <a href="#" class="mobile-nav-item active">АВТО В НАЛИЧИИ</a>
+        <a href="#" class="mobile-nav-item">ТЕСТ ДРАЙВ</a>
+        <a href="#" class="mobile-nav-item">СПЕЦПРЕДЛОЖЕНИЯ</a>
+        <a href="#" class="mobile-nav-item">СЕРВИС</a>
+        <a href="#" class="mobile-nav-item">О КОМПАНИИ</a>
+        <a href="#" class="mobile-nav-item">КОНТАКТЫ</a>
+      </nav>
+      <div class="mobile-contacts">
+        <div class="mobile-contact-item">
+          <img src="images/I1007_7849_31_238_17_52.svg" alt="Location">
+          <span>Москва, Волгоградский проспект, 41, к. 1</span>
+        </div>
+        <div class="mobile-contact-item">
+          <img src="images/I1007_7850_31_247.svg" alt="Phone">
+          <span>+7 (495) 121-35-68</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section id="car-nav">
@@ -111,11 +141,6 @@
   </div>
 </section>
 <section id="showcase">
-  <div class="marquee-banner" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-text">ОФИЦИАЛЬНЫЙ ДИЛЕР TANK В МОСКВЕ</span>
-    </div>
-  </div>
   <div class="container">
     <div class="showcase-grid">
       <div class="showcase-card">
@@ -296,9 +321,7 @@
     <div class="stock-slider">
       <div class="stock-card">
         <div class="stock-image">
-          <button class="stock-arrow stock-arrow-left" aria-label="Предыдущее изображение">‹</button>
           <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
-          <button class="stock-arrow stock-arrow-right" aria-label="Следующее изображение">›</button>
         </div>
         <div class="stock-dots">
           <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -323,9 +346,7 @@
 
       <div class="stock-card">
         <div class="stock-image">
-          <button class="stock-arrow stock-arrow-left" aria-label="Предыдущее изображение">‹</button>
           <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
-          <button class="stock-arrow stock-arrow-right" aria-label="Следующее изображение">›</button>
         </div>
         <div class="stock-dots">
           <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -350,9 +371,7 @@
 
       <div class="stock-card">
         <div class="stock-image">
-          <button class="stock-arrow stock-arrow-left" aria-label="Предыдущее изображение">‹</button>
           <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
-          <button class="stock-arrow stock-arrow-right" aria-label="Следующее изображение">›</button>
         </div>
         <div class="stock-dots">
           <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -377,9 +396,7 @@
 
       <div class="stock-card">
         <div class="stock-image">
-          <button class="stock-arrow stock-arrow-left" aria-label="Предыдущее изображение">‹</button>
           <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
-          <button class="stock-arrow stock-arrow-right" aria-label="Следующее изображение">›</button>
         </div>
         <div class="stock-dots">
           <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -526,87 +543,7 @@
     </div>
   </div>
 </section>
-<section id="contacts">
-  <div class="container">
-    <h2 class="section-title">Контакты</h2>
-    <div class="map-container">
-      <img src="images/9b10b680a89980598c29f6120929ed2049056a5b.png" alt="Map" class="map-bg">
-      
-      <div class="contact-card">
-        <div class="contact-image">
-          <img src="images/2be3e254b401c493aea0b24674cba868a040f8cd.png" alt="Dealer">
-        </div>
-        <div class="contact-details">
-          <div class="detail-row">
-            <img src="images/I1007_8204_31_253_17_52.svg" alt="Loc">
-            <span>Москва, Волгоградский проспект, 41, к. 1</span>
-          </div>
-          <div class="detail-row">
-            <img src="images/I1007_8205_31_247.svg" alt="Time">
-            <span>Пн-вс с 09:00 до 21:40</span>
-          </div>
-          <div class="detail-row">
-            <img src="images/I1007_8206_31_253.svg" alt="Phone">
-            <span>+7 (495) 121-35-68</span>
-          </div>
-          <div class="social-row">
-            <img src="images/1007_8209.svg" alt="Social">
-            <img src="images/1007_8210.svg" alt="Social">
-            <img src="images/1007_8211.svg" alt="Social">
-            <img src="images/1007_8212.svg" alt="Social">
-          </div>
-        </div>
-      </div>
-      
-      <div class="map-pin" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <img src="images/I1007_8204_31_253_17_52.svg" alt="" aria-hidden="true" width="32" height="32">
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="reviews">
-  <div class="container">
-    <h2 class="section-title" style="text-align: center;">ОТЗЫВЫ</h2>
-    <div class="reviews-wrapper">
-      <div class="yandex-badge">
-        <div class="yandex-pin" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#E31E24"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>
-        </div>
-        <span class="yandex-name">Яндекс Карты</span>
-        <div class="rating-info">
-          <div class="stars">★★★★★</div>
-          <span>Наш рейтинг 5.0</span>
-        </div>
-      </div>
-      
-      <div class="reviews-slider">
-        <div class="review-card">
-          <div class="review-stars">★★★★☆</div>
-          <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="review-author">
-            <div class="author-avatar"></div>
-            <div class="author-info">
-              <span class="author-name">Сергей Авилон</span>
-              <span class="review-date">12.08.2025</span>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★☆</div>
-          <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="review-author">
-            <div class="author-avatar"></div>
-            <div class="author-info">
-              <span class="author-name">Сергей Авилон</span>
-              <span class="review-date">12.08.2025</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="useful-info">
   <div class="container">
@@ -692,21 +629,6 @@
 </footer>
 
 <script>
-(function() {
-  var banner = document.querySelector('.marquee-banner');
-  if (!banner) return;
-  var track = banner.querySelector('.marquee-track');
-  if (!track) return;
-  var text = 'ОФИЦИАЛЬНЫЙ ДИЛЕР TANK В МОСКВЕ';
-  var copies = 6;
-  track.innerHTML = '';
-  for (var i = 0; i < copies; i++) {
-    var span = document.createElement('span');
-    span.className = 'marquee-text';
-    span.textContent = text;
-    track.appendChild(span);
-  }
-})();
 
 
 (function() {
@@ -733,35 +655,79 @@
   setInterval(update, 1000);
 })();
 
-// Image slider for stock cars
+// Mobile menu functionality
+(function() {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenuClose = document.querySelector('.mobile-menu-close');
+  const body = document.body;
+
+  if (burgerMenu && mobileMenu) {
+    // Open mobile menu
+    burgerMenu.addEventListener('click', function() {
+      mobileMenu.classList.add('active');
+      body.style.overflow = 'hidden';
+    });
+
+    // Close mobile menu
+    mobileMenuClose.addEventListener('click', function() {
+      mobileMenu.classList.remove('active');
+      body.style.overflow = '';
+    });
+
+    // Close on overlay click
+    mobileMenu.addEventListener('click', function(e) {
+      if (e.target === mobileMenu) {
+        mobileMenu.classList.remove('active');
+        body.style.overflow = '';
+      }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        body.style.overflow = '';
+      }
+    });
+  }
+})();
+
+// Auto image slider for stock cars on scroll
 (function() {
   const stockCards = document.querySelectorAll('.stock-card');
+  let scrollTimeouts = new Map();
 
   stockCards.forEach(card => {
     const img = card.querySelector('.stock-image img');
     const dots = card.querySelectorAll('.dot');
-    const leftArrow = card.querySelector('.stock-arrow-left');
-    const rightArrow = card.querySelector('.stock-arrow-right');
 
-    if (!img || dots.length === 0 || !leftArrow || !rightArrow) return;
+    if (!img || dots.length === 0) return;
 
     const originalSrc = img.src;
     const images = [
-      originalSrc,
-      'images/1.png',
-      'images/4.png',
-      'images/3.png'
+      originalSrc,        // исходное изображение (смотрит налево)
+      'images/1.png',     // спереди
+      'images/4.png',     // сзади
+      'images/3.png'      // направо (отзеркаленная)
     ];
 
     let currentIndex = 0;
+    let isVisible = false;
 
     function updateImage(index) {
       currentIndex = index;
-      img.src = images[currentIndex];
+      img.style.opacity = '0.7'; // плавный переход
 
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
-      });
+      setTimeout(() => {
+        img.src = images[currentIndex];
+        img.style.opacity = '1';
+
+        // Update dots
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }, 150);
     }
 
     function nextImage() {
@@ -769,21 +735,63 @@
       updateImage(nextIndex);
     }
 
-    function prevImage() {
-      const prevIndex = (currentIndex - 1 + images.length) % images.length;
-      updateImage(prevIndex);
+    function startAutoSlide() {
+      if (scrollTimeouts.has(card)) {
+        clearTimeout(scrollTimeouts.get(card));
+      }
+
+      const timeoutId = setTimeout(() => {
+        if (isVisible) {
+          nextImage();
+          startAutoSlide(); // продолжить цикл
+        }
+      }, 2500); // менять каждые 2.5 секунды
+
+      scrollTimeouts.set(card, timeoutId);
     }
 
-    leftArrow.addEventListener('click', prevImage);
-    rightArrow.addEventListener('click', nextImage);
+    function stopAutoSlide() {
+      if (scrollTimeouts.has(card)) {
+        clearTimeout(scrollTimeouts.get(card));
+        scrollTimeouts.delete(card);
+      }
+    }
 
+    // Intersection Observer для отслеживания видимости
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        isVisible = entry.isIntersecting;
+
+        if (isVisible) {
+          startAutoSlide();
+        } else {
+          stopAutoSlide();
+        }
+      });
+    }, {
+      threshold: 0.3, // когда 30% карточки видно
+      rootMargin: '0px 0px -100px 0px'
+    });
+
+    observer.observe(card);
+
+    // Dot click handlers (опционально, если пользователь хочет вручную переключать)
     dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         updateImage(index);
+        stopAutoSlide(); // остановить автопереключение при ручном клике
+        setTimeout(() => startAutoSlide(), 5000); // возобновить через 5 сек
       });
     });
 
+    // Initialize first dot as active
     updateImage(0);
+  });
+
+  // Очистка таймеров при уходе со страницы
+  window.addEventListener('beforeunload', () => {
+    scrollTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
+    scrollTimeouts.clear();
   });
 })();
 </script>

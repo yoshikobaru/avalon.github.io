@@ -99,3 +99,77 @@ a {
   height: 100%;
   pointer-events: none;
 }
+
+/* Prevent horizontal scroll */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Mobile adaptations */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Prevent horizontal scroll on images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ensure no elements overflow */
+  .stock-slider,
+  .showcase-grid,
+  .reviews-slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .stock-slider::-webkit-scrollbar,
+  .showcase-grid::-webkit-scrollbar,
+  .reviews-slider::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  /* Smaller images on very small screens */
+  .card-image,
+  .stock-image {
+    border-radius: 6px;
+  }
+}
