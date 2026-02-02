@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>TANK Avilon</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Abhaya+Libre:wght@400;500;600;700;800&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="fonts.css">
+  <title>TANK Avilon — Авто в наличии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Abhaya+Libre:wght@400;500;600;700;800&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="design-tokens.css">
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="sections.css">
-
   <script src="global.js" defer></script>
 </head>
 <body>
@@ -49,8 +48,8 @@
     </div>
 
     <nav class="header-nav">
-      <a href="#" class="nav-item">МОДЕЛИ</a>
-      <a href="#" class="nav-item active">АВТО В НАЛИЧИИ</a>
+      <a href="index.html" class="nav-item">МОДЕЛИ</a>
+      <a href="test.html" class="nav-item active">АВТО В НАЛИЧИИ</a>
       <a href="#" class="nav-item">ТЕСТ ДРАЙВ</a>
       <a href="#" class="nav-item">СПЕЦПРЕДЛОЖЕНИЯ</a>
       <a href="#" class="nav-item">СЕРВИС</a>
@@ -58,15 +57,14 @@
       <a href="#" class="nav-item">КОНТАКТЫ</a>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu">
       <div class="mobile-menu-header">
         <span class="mobile-menu-title">Меню</span>
         <button class="mobile-menu-close" aria-label="Закрыть меню">×</button>
       </div>
       <nav class="mobile-nav">
-        <a href="#" class="mobile-nav-item">МОДЕЛИ</a>
-        <a href="#" class="mobile-nav-item active">АВТО В НАЛИЧИИ</a>
+        <a href="index.html" class="mobile-nav-item">МОДЕЛИ</a>
+        <a href="test.html" class="mobile-nav-item active">АВТО В НАЛИЧИИ</a>
         <a href="#" class="mobile-nav-item">ТЕСТ ДРАЙВ</a>
         <a href="#" class="mobile-nav-item">СПЕЦПРЕДЛОЖЕНИЯ</a>
         <a href="#" class="mobile-nav-item">СЕРВИС</a>
@@ -86,152 +84,115 @@
     </div>
   </div>
 </section>
-<section id="showcase">
+
+<section id="stock">
   <div class="container">
-    <div class="showcase-grid">
-      <div class="showcase-card">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>TANK 300</h3>
-            <div class="card-image">
-              <img src="images/556a20fe837cce78bd00625844d26f8b0d474aea.png" alt="TANK 300">
-            </div>
+    <h2 class="section-title" style="text-align: center;">Автомобили в наличии,<br>которые вы можете забрать сегодня</h2>
+    
+    <div class="stock-slider">
+      <div class="stock-card">
+        <div class="stock-image">
+          <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
+        </div>
+        <div class="stock-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="stock-info">
+          <h3>TANK 300</h3>
+          <p class="stock-trim">Adventure 1.5T 7DCT 4WD (220 л.с.)</p>
+          <p class="stock-year">2024</p>
+          
+          <div class="stock-specs">
+            <div class="stock-spec"><img src="images/I1007_8491_226_3736.svg"> 1.5л (220 л.с.)</div>
+            <div class="stock-spec"><img src="images/I1007_8492_226_3736.svg"> Робот</div>
+            <div class="stock-spec"><img src="images/I1007_8493_226_3736.svg"> Полный</div>
           </div>
-          <div class="specs-grid">
-            <div class="spec-item">
-              <span class="spec-label">Мощность</span>
-              <span class="spec-value">177 л.с.</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Скорость</span>
-              <span class="spec-value">175 км/ч</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Двигатель</span>
-              <span class="spec-value">1.5T</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Разгон</span>
-              <span class="spec-value">10.6 сек</span>
-            </div>
-          </div>
-          <div class="card-actions">
-            <div class="card-actions-row">
-              <button class="btn btn-detail">ПОДРОБНЕЕ</button>
-              <button class="btn btn-test">ТЕСТ-ДРАЙВ &gt;</button>
-            </div>
-            <button class="btn btn-stock">АВТОМОБИЛИ В НАЛИЧИИ</button>
+          
+          <div class="stock-price">
+            <span class="price-main">4 171 840 ₽</span>
+            <span class="price-credit">В кредит от 33 693 ₽/мес</span>
           </div>
         </div>
       </div>
 
-      <div class="showcase-card bordered">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>TANK 400</h3>
-            <div class="card-image">
-              <img src="images/2ee2584302b23726d97fe23d9b53810b89e01c2b.png" alt="TANK 400">
-            </div>
+      <div class="stock-card">
+        <div class="stock-image">
+          <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
+        </div>
+        <div class="stock-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="stock-info">
+          <h3>TANK 300</h3>
+          <p class="stock-trim">Adventure 1.5T 7DCT 4WD (220 л.с.)</p>
+          <p class="stock-year">2024</p>
+          
+          <div class="stock-specs">
+            <div class="stock-spec"><img src="images/I1007_8513_226_3736.svg"> 1.5л (220 л.с.)</div>
+            <div class="stock-spec"><img src="images/I1007_8514_226_3736.svg"> Робот</div>
+            <div class="stock-spec"><img src="images/I1007_8515_226_3736.svg"> Полный</div>
           </div>
-          <div class="specs-grid">
-            <div class="spec-item">
-              <span class="spec-label">Мощность</span>
-              <span class="spec-value">177 л.с.</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Скорость</span>
-              <span class="spec-value">175 км/ч</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Двигатель</span>
-              <span class="spec-value">1.5T</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Разгон</span>
-              <span class="spec-value">9.7 сек</span>
-            </div>
-          </div>
-          <div class="card-actions">
-            <div class="card-actions-row">
-              <button class="btn btn-detail">ПОДРОБНЕЕ</button>
-              <button class="btn btn-test">ТЕСТ-ДРАЙВ &gt;</button>
-            </div>
-            <button class="btn btn-stock">АВТОМОБИЛИ В НАЛИЧИИ</button>
+          
+          <div class="stock-price">
+            <span class="price-main">4 171 840 ₽</span>
+            <span class="price-credit">В кредит от 33 693 ₽/мес</span>
           </div>
         </div>
       </div>
 
-      <div class="showcase-card bordered">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>TANK 500</h3>
-            <div class="card-image">
-              <img src="images/3d2b98b58f38c88984c8e4c12bee8980239e1dfc.png" alt="TANK 500">
-            </div>
+      <div class="stock-card">
+        <div class="stock-image">
+          <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
+        </div>
+        <div class="stock-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="stock-info">
+          <h3>TANK 300</h3>
+          <p class="stock-trim">Adventure 1.5T 7DCT 4WD (220 л.с.)</p>
+          <p class="stock-year">2024</p>
+          
+          <div class="stock-specs">
+            <div class="stock-spec"><img src="images/I1007_8535_226_3736.svg"> 1.5л (220 л.с.)</div>
+            <div class="stock-spec"><img src="images/I1007_8536_226_3736.svg"> Робот</div>
+            <div class="stock-spec"><img src="images/I1007_8537_226_3736.svg"> Полный</div>
           </div>
-          <div class="specs-grid">
-            <div class="spec-item">
-              <span class="spec-label">Мощность</span>
-              <span class="spec-value">177 л.с.</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Скорость</span>
-              <span class="spec-value">175 км/ч</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Двигатель</span>
-              <span class="spec-value">1.5T</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Разгон</span>
-              <span class="spec-value">9.6 сек</span>
-            </div>
-          </div>
-          <div class="card-actions">
-            <div class="card-actions-row">
-              <button class="btn btn-detail">ПОДРОБНЕЕ</button>
-              <button class="btn btn-test">ТЕСТ-ДРАЙВ &gt;</button>
-            </div>
-            <button class="btn btn-stock">АВТОМОБИЛИ В НАЛИЧИИ</button>
+          
+          <div class="stock-price">
+            <span class="price-main">4 171 840 ₽</span>
+            <span class="price-credit">В кредит от 33 693 ₽/мес</span>
           </div>
         </div>
       </div>
 
-      <div class="showcase-card bordered">
-        <div class="card-content">
-          <div class="card-header">
-            <h3>TANK 700</h3>
-            <div class="card-image">
-              <img src="images/c70b6e29d0b8e2d7707cd75eed9dfcd44481a221.png" alt="TANK 700">
-            </div>
+      <div class="stock-card">
+        <div class="stock-image">
+          <img src="images/44b537f2299407c9a634a0762a537b058936a9da.png" alt="Tank 300">
+        </div>
+        <div class="stock-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="stock-info">
+          <h3>TANK 300</h3>
+          <p class="stock-trim">Adventure 1.5T 7DCT 4WD (220 л.с.)</p>
+          <p class="stock-year">2024</p>
+          
+          <div class="stock-specs">
+            <div class="stock-spec"><img src="images/I1007_8557_226_3736.svg"> 1.5л (220 л.с.)</div>
+            <div class="stock-spec"><img src="images/I1007_8558_226_3736.svg"> Робот</div>
+            <div class="stock-spec"><img src="images/I1007_8559_226_3736.svg"> Полный</div>
           </div>
-          <div class="specs-grid">
-            <div class="spec-item">
-              <span class="spec-label">Мощность</span>
-              <span class="spec-value">177 л.с.</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Скорость</span>
-              <span class="spec-value">175 км/ч</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Двигатель</span>
-              <span class="spec-value">1.5T</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Разгон</span>
-              <span class="spec-value">5.9 сек</span>
-            </div>
-          </div>
-          <div class="card-actions">
-            <div class="card-actions-row">
-              <button class="btn btn-detail">ПОДРОБНЕЕ</button>
-              <button class="btn btn-test">ТЕСТ-ДРАЙВ &gt;</button>
-            </div>
-            <button class="btn btn-stock">АВТОМОБИЛИ В НАЛИЧИИ</button>
+          
+          <div class="stock-price">
+            <span class="price-main">4 171 840 ₽</span>
+            <span class="price-credit">В кредит от 33 693 ₽/мес</span>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="stock-more">
+      <button class="btn btn-outline-white">ПОКАЗАТЬ БОЛЬШЕ ВАРИАНТОВ</button>
     </div>
   </div>
 </section>
@@ -305,19 +266,16 @@
   const body = document.body;
 
   if (burgerMenu && mobileMenu) {
-    // Open mobile menu
     burgerMenu.addEventListener('click', function() {
       mobileMenu.classList.add('active');
       body.style.overflow = 'hidden';
     });
 
-    // Close mobile menu
     mobileMenuClose.addEventListener('click', function() {
       mobileMenu.classList.remove('active');
       body.style.overflow = '';
     });
 
-    // Close on overlay click
     mobileMenu.addEventListener('click', function(e) {
       if (e.target === mobileMenu) {
         mobileMenu.classList.remove('active');
@@ -325,7 +283,6 @@
       }
     });
 
-    // Close on escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
         mobileMenu.classList.remove('active');
@@ -348,10 +305,10 @@
 
     const originalSrc = img.src;
     const images = [
-      originalSrc,        // исходное изображение (смотрит налево)
-      'images/1.png',     // спереди
-      'images/4.png',     // сзади
-      'images/3.png'      // направо (отзеркаленная)
+      originalSrc,
+      'images/1.png',
+      'images/4.png',
+      'images/3.png'
     ];
 
     let currentIndex = 0;
@@ -359,13 +316,12 @@
 
     function updateImage(index) {
       currentIndex = index;
-      img.style.opacity = '0.7'; // плавный переход
+      img.style.opacity = '0.7';
 
       setTimeout(() => {
         img.src = images[currentIndex];
         img.style.opacity = '1';
 
-        // Update dots
         dots.forEach((dot, i) => {
           dot.classList.toggle('active', i === currentIndex);
         });
@@ -385,9 +341,9 @@
       const timeoutId = setTimeout(() => {
         if (isVisible) {
           nextImage();
-          startAutoSlide(); // продолжить цикл
+          startAutoSlide();
         }
-      }, 2500); // менять каждые 2.5 секунды
+      }, 2500);
 
       scrollTimeouts.set(card, timeoutId);
     }
@@ -399,7 +355,6 @@
       }
     }
 
-    // Intersection Observer для отслеживания видимости
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         isVisible = entry.isIntersecting;
@@ -411,26 +366,23 @@
         }
       });
     }, {
-      threshold: 0.3, // когда 30% карточки видно
+      threshold: 0.3,
       rootMargin: '0px 0px -100px 0px'
     });
 
     observer.observe(card);
 
-    // Dot click handlers (опционально, если пользователь хочет вручную переключать)
     dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         updateImage(index);
-        stopAutoSlide(); // остановить автопереключение при ручном клике
-        setTimeout(() => startAutoSlide(), 5000); // возобновить через 5 сек
+        stopAutoSlide();
+        setTimeout(() => startAutoSlide(), 5000);
       });
     });
 
-    // Initialize first dot as active
     updateImage(0);
   });
 
-  // Очистка таймеров при уходе со страницы
   window.addEventListener('beforeunload', () => {
     scrollTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
     scrollTimeouts.clear();
@@ -439,3 +391,4 @@
 </script>
 </body>
 </html>
+
