@@ -50,7 +50,7 @@
 
     <nav class="header-nav">
       <a href="#" class="nav-item">МОДЕЛИ</a>
-      <a href="#" class="nav-item active">АВТО В НАЛИЧИИ</a>
+      <a href="#" class="nav-item">АВТО В НАЛИЧИИ</a>
       <a href="#" class="nav-item">ТЕСТ ДРАЙВ</a>
       <a href="#" class="nav-item">СПЕЦПРЕДЛОЖЕНИЯ</a>
       <a href="#" class="nav-item">СЕРВИС</a>
@@ -66,7 +66,7 @@
       </div>
       <nav class="mobile-nav">
         <a href="#" class="mobile-nav-item">МОДЕЛИ</a>
-        <a href="#" class="mobile-nav-item active">АВТО В НАЛИЧИИ</a>
+        <a href="#" class="mobile-nav-item">АВТО В НАЛИЧИИ</a>
         <a href="#" class="mobile-nav-item">ТЕСТ ДРАЙВ</a>
         <a href="#" class="mobile-nav-item">СПЕЦПРЕДЛОЖЕНИЯ</a>
         <a href="#" class="mobile-nav-item">СЕРВИС</a>
@@ -434,6 +434,7 @@
   window.addEventListener('beforeunload', () => {
     scrollTimeouts.forEach(timeoutId => clearTimeout(timeoutId));
     scrollTimeouts.clear();
+
   });
 })();
 </script>
